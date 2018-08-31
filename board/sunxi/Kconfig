@@ -261,6 +261,7 @@ config OLD_SUNXI_KERNEL_COMPAT
 	sub-optimal settings for newer kernels, only enable if needed.
 
 config MMC
+	bool
 	depends on !UART0_PORT_F
 	default y if ARCH_SUNXI
 

@@ -376,7 +376,11 @@ config ARCH_FIXUP_FDT
 
 endmenu		# Boot images
 
+source "lib/Kconfig"
+
 source "common/Kconfig"
+
+if !TARGET_IMX31_PHYCORE
 
 source "cmd/Kconfig"
 
@@ -388,6 +392,5 @@ source "drivers/Kconfig"
 
 source "fs/Kconfig"
 
-source "lib/Kconfig"
-
 source "test/Kconfig"
+endif
