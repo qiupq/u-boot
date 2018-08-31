@@ -12,3 +12,4 @@ obj- += dummy.o
 extra-y	= start.o
 
 obj-y += ../arm11/
+obj-$(CONFIG_EDS64) += eds64/
