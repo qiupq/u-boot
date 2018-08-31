@@ -285,6 +285,10 @@ config TARGET_IMX31_PHYCORE
 	bool "Support imx31_phycore"
 	select CPU_ARM1136
 
+config TARGET_S3C6410_EDDYSUN
+	bool "Support imx31_phycore"
+	select CPU_ARM1176
+
 config TARGET_MX31ADS
 	bool "Support mx31ads"
 	select CPU_ARM1136
@@ -1040,6 +1044,8 @@ source "board/vscom/baltos/Kconfig"
 source "board/woodburn/Kconfig"
 source "board/work-microwave/work_92105/Kconfig"
 source "board/zipitz2/Kconfig"
+
+source "board/s3c6410_eddysun/Kconfig"
 
 source "arch/arm/Kconfig.debug"
 

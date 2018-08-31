@@ -1,0 +1,12 @@
+if TARGET_S3C6410_EDDYSUN
+
+config SYS_BOARD
+	default "s3c6410_eddysun"
+
+config SYS_SOC
+	default "s3c6410"
+
+config SYS_CONFIG_NAME
+	default "s3c6410_eddysun"
+
+endif
