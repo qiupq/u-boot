@@ -246,6 +246,7 @@ ifeq ($(HOSTARCH),$(ARCH))
 CROSS_COMPILE ?=
 endif
 
+CROSS_COMPILE ?=arm-hh-linux-gnueabi-
 KCONFIG_CONFIG	?= .config
 export KCONFIG_CONFIG
 
